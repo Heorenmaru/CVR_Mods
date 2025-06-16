@@ -1,0 +1,5 @@
+c:\Users\Heorenmaru\Desktop\Immercive touch\obj\Debug\net472\ImmersiveTouch.csproj.AssemblyReference.cache
+c:\Users\Heorenmaru\Desktop\Immercive touch\obj\Debug\net472\ImmersiveTouch.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Heorenmaru\Desktop\Immercive touch\obj\Debug\net472\ImmersiveTouch.AssemblyInfoInputs.cache
+c:\Users\Heorenmaru\Desktop\Immercive touch\obj\Debug\net472\ImmersiveTouch.AssemblyInfo.cs
+c:\Users\Heorenmaru\Desktop\Immercive touch\obj\Debug\net472\ImmersiveTouch.csproj.CoreCompileInputs.cache
