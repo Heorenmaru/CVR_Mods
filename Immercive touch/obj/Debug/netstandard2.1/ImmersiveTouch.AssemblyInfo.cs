@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImmersiveTouch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b418a9f9e30699ad5dd781dcb0b73b8666feda0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImmersiveTouch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImmersiveTouch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

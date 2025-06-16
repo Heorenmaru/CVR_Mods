@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Heorenmaru\\Desktop\\Immercive touch\\ImmersiveTouch.csproj": {}
+    "F:\\Projects\\GIT_Projects\\CVR_Mods\\Immercive touch\\ImmersiveTouch.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Heorenmaru\\Desktop\\Immercive touch\\ImmersiveTouch.csproj": {
+    "F:\\Projects\\GIT_Projects\\CVR_Mods\\Immercive touch\\ImmersiveTouch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Heorenmaru\\Desktop\\Immercive touch\\ImmersiveTouch.csproj",
+        "projectUniqueName": "F:\\Projects\\GIT_Projects\\CVR_Mods\\Immercive touch\\ImmersiveTouch.csproj",
         "projectName": "ImmersiveTouch",
-        "projectPath": "C:\\Users\\Heorenmaru\\Desktop\\Immercive touch\\ImmersiveTouch.csproj",
+        "projectPath": "F:\\Projects\\GIT_Projects\\CVR_Mods\\Immercive touch\\ImmersiveTouch.csproj",
         "packagesPath": "C:\\Users\\Heorenmaru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Heorenmaru\\Desktop\\Immercive touch\\obj\\",
+        "outputPath": "F:\\Projects\\GIT_Projects\\CVR_Mods\\Immercive touch\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Heorenmaru\\AppData\\Roaming\\NuGet\\NuGet.Config"

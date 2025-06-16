@@ -29,6 +29,6 @@
     </ItemGroup>
 
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-      <Exec Command="copy /y &quot;$(TargetPath)&quot; &quot;E:\SteamLibrary\steamapps\common\ChilloutVR\Mods\&quot;" />
+      <Exec Command="copy /y &quot;$(TargetPath)&quot; &quot;$(ProjectDir)\RELEASE\&quot;" />
     </Target>
 </Project>
