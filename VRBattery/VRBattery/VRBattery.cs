@@ -83,11 +83,13 @@ namespace VRBattery
                 var deviceClass = OpenVR.System.GetTrackedDeviceClass(deviceId);
 
                 //debug
-                if (deviceClass != ETrackedDeviceClass.Invalid)
+                if (deviceClass == ETrackedDeviceClass.Invalid)
                 {
-                    MelonLogger.Warning($" --- > test: ID:{deviceId} class: {deviceClass}");
+                    continue;
+                    
                 }
 
+                //MelonLogger.Warning($" --- > test: ID:{deviceId} class: {deviceClass}");
                 ETrackedPropertyError status = ETrackedPropertyError.TrackedProp_Success;
 
 
