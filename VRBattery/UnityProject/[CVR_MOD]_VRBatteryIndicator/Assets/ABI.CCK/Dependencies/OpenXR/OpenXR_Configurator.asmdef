@@ -1,0 +1,32 @@
+{
+    "name": "OpenXR_Configurator",
+    "rootNamespace": "ABI.CCK",
+    "references": [
+        "Unity.XR.Management",
+        "Unity.XR.Management.Editor",
+        "Unity.XR.OpenXR",
+        "Unity.RenderPipelines.Core.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.xr.management",
+            "expression": "",
+            "define": "CVR_CCK_XRMANAGMENTFOUND"
+        },
+        {
+            "name": "com.unity.xr.openxr",
+            "expression": "",
+            "define": "CVR_CCK_OPENXRFOUND"
+        }
+    ],
+    "noEngineReferences": false
+}

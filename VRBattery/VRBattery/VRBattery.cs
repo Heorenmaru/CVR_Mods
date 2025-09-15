@@ -9,9 +9,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Valve.VR;
 
-[assembly: MelonInfo(typeof(VRBattery.VRBattery), "VRBattery", "0.0.1", "Heorenmaru", "https://github.com/Heorenmaru/CVRMods")]
-[assembly: MelonGame("Alpha Blend Interactive", "ChilloutVR")]
-[assembly: MelonGame("null", "ChilloutVR")]
+
 
 namespace VRBattery
 {
