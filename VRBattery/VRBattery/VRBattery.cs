@@ -45,7 +45,8 @@ namespace VRBattery
         Color ColorOn = new Color(1f, 1f, 1f, 1f);
 
         Color ColorBatOk = new Color(0f, 1f, 0f, 1f);
-        Color ColorBatLow = new Color(1f, 0f, 0f, 1f);
+        Color ColorBatLow = new Color(1f, 1f, 0f, 1f);
+        Color ColorBatCrit = new Color(1f, 0f, 0f, 1f);
 
         ////////////////////////////////////////////
         /// VR
@@ -84,7 +85,7 @@ namespace VRBattery
                 if (deviceClass == ETrackedDeviceClass.Invalid)
                 {
                     continue;
-                    
+
                 }
 
                 //MelonLogger.Warning($" --- > test: ID:{deviceId} class: {deviceClass}");
@@ -125,6 +126,28 @@ namespace VRBattery
             }
         }
 
+        private void SetBarColor(Image BarImage, float BatLVL)
+        {
+            if (BatLVL > 0.25f)
+            {
+                BarImage.color = ColorBatOk;
+                // MelonLogger.Msg($"BatteryColor: ok");
+            }
+            else
+            {
+                // MelonLogger.Msg($"BatteryColor: low");
+                if (BatLVL > 0.15f)
+                {
+                    BarImage.color = ColorBatLow;
+                }
+                else
+                {
+                    BarImage.color = ColorBatCrit;
+                }
+
+            }
+
+        }
         // Опрашивает состояние устройств и выводит батарею + активность
         private void UpdateTrackedDevicesStatus()
         {
@@ -161,16 +184,27 @@ namespace VRBattery
                         {
                             leftControllerImage.color = ColorOn;
                             leftControllerImageBar.fillAmount = batteryLevel;
-                            if (batteryLevel > 0.25f)
-                            {
-                                leftControllerImageBar.color = ColorBatOk;
-                                // MelonLogger.Msg($"BatteryColor: ok");
-                            }
-                            else
-                            {
-                                // MelonLogger.Msg($"BatteryColor: low");
-                                leftControllerImageBar.color = ColorBatLow;
-                            }
+
+                            SetBarColor(leftControllerImageBar, batteryLevel);
+
+                            // if (batteryLevel > 0.25f)
+                            // {
+                            //     leftControllerImageBar.color = ColorBatOk;
+                            //     // MelonLogger.Msg($"BatteryColor: ok");
+                            // }
+                            // else
+                            // {
+                            //     // MelonLogger.Msg($"BatteryColor: low");
+                            //     if (batteryLevel > 0.15f)
+                            //     {
+                            //         leftControllerImageBar.color = ColorBatLow;
+                            //     }
+                            //     else
+                            //     {
+                            //         leftControllerImageBar.color = ColorBatCrit;
+                            //     }
+
+                            // }
 
 
                         }
@@ -188,14 +222,25 @@ namespace VRBattery
                         {
                             RightControllerImage.color = ColorOn;
                             RightControllerImageBar.fillAmount = batteryLevel;
-                            if (batteryLevel > 0.25f)
-                            {
-                                RightControllerImageBar.color = ColorBatOk;
-                            }
-                            else
-                            {
-                                RightControllerImageBar.color = ColorBatLow;
-                            }
+
+
+                            SetBarColor(RightControllerImageBar, batteryLevel);
+
+                            // if (batteryLevel > 0.25f)
+                            // {
+                            //     RightControllerImageBar.color = ColorBatOk;
+                            // }
+                            // else
+                            // {
+                            //     if (batteryLevel > 0.15f)
+                            //     {
+                            //         RightControllerImageBar.color = ColorBatLow;
+                            //     }
+                            //     else
+                            //     {
+                            //         RightControllerImageBar.color = ColorBatCrit;
+                            //     }
+                            // }
 
 
                         }
@@ -217,14 +262,25 @@ namespace VRBattery
                         {
                             tracker1Image.color = ColorOn;
                             tracker1ImageBar.fillAmount = batteryLevel;
-                            if (batteryLevel > 0.25f)
-                            {
-                                tracker1ImageBar.color = ColorBatOk;
-                            }
-                            else
-                            {
-                                tracker1ImageBar.color = ColorBatLow;
-                            }
+
+                            SetBarColor(tracker1ImageBar, batteryLevel);
+
+
+                            // if (batteryLevel > 0.25f)
+                            // {
+                            //     tracker1ImageBar.color = ColorBatOk;
+                            // }
+                            // else
+                            // {
+                            //     if (batteryLevel > 0.15f)
+                            //     {
+                            //         tracker1ImageBar.color = ColorBatLow;
+                            //     }
+                            //     else
+                            //     {
+                            //         tracker1ImageBar.color = ColorBatCrit;
+                            //     }
+                            // }
 
 
                         }
@@ -243,14 +299,25 @@ namespace VRBattery
                         {
                             tracker2Image.color = ColorOn;
                             tracker2ImageBar.fillAmount = batteryLevel;
-                            if (batteryLevel > 0.25f)
-                            {
-                                tracker2ImageBar.color = ColorBatOk;
-                            }
-                            else
-                            {
-                                tracker2ImageBar.color = ColorBatLow;
-                            }
+
+                            SetBarColor(tracker2ImageBar, batteryLevel);
+
+
+                            // if (batteryLevel > 0.25f)
+                            // {
+                            //     tracker2ImageBar.color = ColorBatOk;
+                            // }
+                            // else
+                            // {
+                            //     if (batteryLevel > 0.15f)
+                            //     {
+                            //         tracker2ImageBar.color = ColorBatLow;
+                            //     }
+                            //     else
+                            //     {
+                            //         tracker2ImageBar.color = ColorBatCrit;
+                            //     }
+                            // }
 
 
                         }
@@ -268,15 +335,26 @@ namespace VRBattery
                         {
                             tracker3Image.color = ColorOn;
                             tracker3ImageBar.fillAmount = batteryLevel;
-                            if (batteryLevel > 0.25f)
-                            {
-                                tracker3ImageBar.color = ColorBatOk;
-                            }
-                            else
-                            {
-                                tracker3ImageBar.color = ColorBatLow;
 
-                            }
+                            SetBarColor(tracker3ImageBar, batteryLevel);
+
+
+                            // if (batteryLevel > 0.25f)
+                            // {
+                            //     tracker3ImageBar.color = ColorBatOk;
+                            // }
+                            // else
+                            // {
+                            //     if (batteryLevel > 0.15f)
+                            //     {
+                            //         tracker3ImageBar.color = ColorBatLow;
+                            //     }
+                            //     else
+                            //     {
+                            //         tracker3ImageBar.color = ColorBatCrit;
+                            //     }
+
+                            // }
 
 
                         }
